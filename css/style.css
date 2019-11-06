@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+img{
+	max-width: 100%;
+	display: block;
+	/* margin: 24px; */
+}
+
+header{
+    padding: 25px 0;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+header .row{align-items: center;}
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.logo{
+	max-width: 30%;
+	flex-basis: 30%;
+}
+.logo a{
+
+text-decoration: none;
+
+text-transform: uppercase;
+
+color: #28377e;
+
+font-size: 25px;
+
+font-weight: 700;
+
+display: block;
+}
+nav{
+	max-width: 70%;
+	flex-basis: 70%
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	text-decoration: none;
+	margin-left: 14px;
+	text-transform: uppercase;
+	color: #204f87;
+	font-size: 12px;
+	font-weight: 600;
+	display: block;
+}
+
+nav ul li a:hover{
+	color: #f2622c;
+}
+
+.banner-section{position: relative;overflow: hidden;}
+
+.banner-orange{height: 100%;position: absolute;top: 0;}
+.banner-section a{
+    
+}
+.banner-text{
+
+max-width: 800px;
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+}
+.banner-text h1{
+	font-size: 70px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.down-arrow{
+	display: block;
+    position: absolute;
+    color: #fff;
+    bottom: 20%;
+    right: 50%;
+    transform: translate(-50%, 20%);
+    animation-name: click-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes click-down{
+	0%{bottom: 20%;}
+	50%{bottom: 17%;}
+	100%{bottom: 20%;}
+}
+
+.about-us{
+    margin: 118px 0 200px;
+}
+.aboutus-content{
+    max-width: 70%;
+    flex-basis: 70%;
+}
+span{
+    width: 60px;
+    height: 4px;
+    background-color: #f2622c;
+    display: block;
+}
+.heading{
+}
+.heading h2{
+    font-size: 36px;
+    color: #2b2f85;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content{
+    padding-right: 150px;
+}
+.content p{
+    font-size: 14px;
+    color: #b0b0b1;
+    text-align: justify;
+}
+.aboutus-image{
+    max-width: 30%;
+    flex-basis: 30%;}
+
+.aboutus-image img{
+    align-items: flex-end;
+}
+.portfolio-section{
+	position: relative;
+	background-color: #f7f8f8;
+	background-image: url(../images/portfolio-banner.png);
+	background-repeat: no-repeat;
+	padding: 80px 0 120px;
+	background-position: bottom right;
+}
+
+.portfolio-content{
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	z-index: 1;
+	position: relative;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.portfolio{
+    position: relative;
+}
+.portfolio img{
+	width: 100%;
+}
+.portfolio-content h3{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: #fff;
+    opacity: 0;
+    transition-duration:all 0.5s
+    z-index:2;
+}
+.portfolio-content:hover h3{
+	opacity: 1;
+	 top: 50%;
+}
+.portfolio-section span{margin: auto;}
+.portfolio-section .heading{
+    text-align: center;
+}
+.portfolio-section h2{
+	    margin-bottom: 58px;
+}
+.portfolio span{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+100&0+0,1+94 */
+background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,1) 94%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 94%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 94%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+transition:all 0.3s;
+display: block;
+}
+.portfolio:hover span{
+	opacity: 1;
+	height: 100%;
+}
+.portfolio a{
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    animation-name:click-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+}
+
+.portfolio:hover a{
+	opacity: 1;
+}
+@keyframes click-right{
+	0%{right: 50%,}
+	50%{right: 45%;}
+	100%{right: 50%;}
+}
+.portfolio a img{
+	width: auto;
+}
+
+.team-section{
+    background-image: url(../images/team-bg.jpg);
+    background-repeat: no-repeat;
+}
+.team-content{
+    max-width: 30%;
+    flex-basis: 30%;
+    padding-top: 50px;
+}
+.team-content h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+}
+.team-content p{
+    font-size: 14px;
+    color: #929dcf;
+}
+.team-content a{
+	text-decoration: none;
+	color: #f2622c;
+	text-transform: uppercase;
+}
+.team-content span{
+	width: 60px;
+	height: 4px;
+	background-color: #f2622c;
+	display: block;
+}
+
+.team-photo{
+    max-width: 70%;
+    flex-basis: 70%;
+    box-sizing: border-box;
+}
+.photo{
+    max-width: 100%;
+    flex-basis: 100%;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+}
+.photo h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 1;
+}
+.photo span{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	 /* FF3.6-15 */
+	 /* Chrome10-25,Safari5.1-6 */
+	 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	 /* IE6-9 */
+	display: block;
+	background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#191448+50,191448+100&0+50,1+99 */
+background: -moz-linear-gradient(top,  rgba(25,20,72,0) 50%, rgba(25,20,72,1) 99%, rgba(25,20,72,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(25,20,72,0) 50%,rgba(25,20,72,1) 99%,rgba(25,20,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(25,20,72,0) 50%,rgba(25,20,72,1) 99%,rgba(25,20,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00191448', endColorstr='#191448',GradientType=0 ); /* IE6-9 */
+}
+.team-photo .row{
+}
+.photo-box{
+	padding: 10px;
+	box-sizing: border-box;
+}
+.team-section .container{padding-top: 150PX;padding-bottom: 130px;}
+.team-section .row{
+	
+/* padding: 138px 0 55px; */
+}
+
+.language-section{}
+.language-section .container{}
+.language-section .heading{
+    text-align: center;
+    padding-top: 72px;
+}
+.language-section .heading h2{}
+.language-section .heading span{
+    margin: auto;
+}
+
+.language{
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 21px;
+    box-sizing: border-box;
+}
+.language h4{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #28377e;
+}
+.language p{
+    font-size: 14px;
+    color: #b1b0b1;
+    text-align: justify;
+}
+.language a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f2622c;
+}
+.contact-section{
+	background-color: #28377e;
+}
+.contact-section .container{
+	text-align: center;
+}
+.contact-section .heading{
+	padding-top: 72px;
+}
+.contact-section .heading span{
+	margin: auto;
+}
+.contact-section .heading h2{
+	color: #fff;
+}
+form{
+    max-width: 525px;
+    margin: auto;
+}
+form .row{}
+form .row input{
+    max-width: 100%;
+    flex-basis: 100%;
+    background: transparent;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom-color: #ffffff8f;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+}
+form .row textarea{
+    max-width: 100%;
+    flex-basis: 100%;
+}
+.submit{
+    width: 216px;
+    height: 50px;
+    background-color: #f2622c;
+    border-width: 0;
+    margin-top: 48px;
+    font-size: 24px;
+    margin-bottom: 94px;
+    color: white;
+    border-radius: 3px;
+}
+.submit:hover{
+	background-color: #fff;
+	color:#f2622c;
+}
+footer{
+    background-color: #0c1234;
+}
+.copyright{max-width: 50%;flex-basis: 50%;}
+.copyright p{
+    color: #616ca8;
+    font-size: 14px;
+}
+.social{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.social .row{
+    justify-content: flex-end;
+}
+.social-icon{
+    margin: 22px 0px 29px 10px;
+}
+.social-icon a{
+    color: white;
+}
+.social-icon a:hover{
+	color: #f2622c;
+}
+footer .container{
+}
+footer .container .row{
+    justify-content: flex-end;
+    align-items: center;
+}
